@@ -3,11 +3,13 @@
     font-family: "Montserrat";
     src: url(../css/fonts/Montserrat-VariableFont_wght.ttf);
 }
+body{
+    font-family: "Montserrat";
+}
 header{
     display: flex;
     flex-direction: column;
     text-align: center;
-    font-family: "Montserrat";
     background-color: #000777;
     padding: 1rem;
     h1{
@@ -21,5 +23,30 @@ header{
         flex-grow: 1;
         color: white;
 
+    }
+}
+nav{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 1rem;
+    background-color: #101cbb;
+    ul{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-around;
+        flex-grow: 1;
+        gap: 1;
+    }
+    li{
+        background-color: #000777;
+        color: #ffffaa;
+        border: 2px solid black;
+        padding: 0.5rem 1rem;
+    }
+    a{
+        width: 100%;
+        height: 100%;
     }
 }
